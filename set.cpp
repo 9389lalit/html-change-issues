@@ -1,18 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long int ll;
+#define int long long;
 int main()
 {
     set<string> st;
-    int n;
-    cin >> n;
-    while (n--)
+    int num;
+    cin >> num;
+    while (num--)
     {
         string str;
         cin >> str;
         st.insert(str);//O(logn)
     }
-    auto it1 = st.find("abd");//O(logn)
+    auto it1 = st.find("abdabd");//O(logn)
     if (it1 != st.end())
     {
         st.erase(it1);
